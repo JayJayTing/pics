@@ -4,7 +4,6 @@ function SearchBar({ onSubmit }) {
 	const [state, setState] = useState({ term: "" });
 	function onFormSubmit(event) {
 		event.preventDefault();
-
 		onSubmit(state.term);
 	}
 
